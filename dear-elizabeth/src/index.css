@@ -1,0 +1,91 @@
+:root {
+  --background: #352208
+  --highlight: #e1bb80
+  --main: #7b6b43
+  --second: #685634
+  --third: 
+}
+
+body {
+  background-color: #352208;
+  color: #e1bb80;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #685634;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+.content {
+  margin: 30px;
+  padding: 30px;
+  border: #e1bb80 solid 2px;
+  border-radius: 30px;
+  background-color: #685634;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer {
+  background-color: #685634;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.topnav {
+  background-color: #806443;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #e1bb80;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #685634;
+  color: #e1bb80;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #e1bb80;
+  color: #685634;
+}
+
+.sepia {
+  filter:sepia(75%)
+}
+
+.smallergif {
+  transform: scale(.8)
+}
