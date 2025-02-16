@@ -78,7 +78,7 @@ function CharacterProfile() {
         vice: "Perfectionism",
         value: "Knowledge",
       },
-      playlistUrl: "5HqyPLi4yJ6jrHZBzjIIqY",
+      playlistUrl: "342SYgrgaBRVBfVtvT4b79",
       recentLetters: [],
       biography: [
         "Elspeth Mackintosh was born into a world where the ancient whispers of Scottish lore mingled with the brisk winds that swept across the shores of Loch Ness. She has always been captivated by the tales spun by locals and tourists alike, stories that danced between the realms of history and myth, reality and fantasy.",
