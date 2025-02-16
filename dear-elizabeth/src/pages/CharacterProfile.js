@@ -23,19 +23,12 @@ function CharacterProfile() {
         value: "Authenticity",
       },
       playlistUrl: "0ydpBse7hugvL8IGaIMYuM",
-      recentLetters: [
-        { id: 1, title: "Storm's Brewing", date: "February 15, 1990" },
-        { id: 2, title: "Midnight Musings", date: "February 10, 1990" },
-        { id: 3, title: "Salem Memories", date: "February 5, 1990" },
-        { id: 4, title: "Ocean's Call", date: "January 30, 1990" },
-        { id: 5, title: "Winter's Heart", date: "January 25, 1990" },
-      ],
+      recentLetters: [],
       biography: [
         "In the mystical embrace of Salem, Massachusetts, Lorelei Tempest Blair was born on a storm-laden night in the summer of 1962 to Elaine Blair and her husband Theodore Blair, (formerly Proctor, yes, he took his wife's surname). The Blair family, renowned for their deep connection to ancient magic, could trace their lineage back through generations of gifted witches, now combined with the Proctor line.",
         "From a young age, Lorelei exhibited an innate affinity for the natural elements. Her laughter seemed to summon playful breezes, and when she danced, raindrops fell in a gentle rhythm. Elders in the Blair family recognized the signs—a Storm Weaver was emerging among them, destined to wield the power of storms.",
         "Lorelei's grandmother, Maeve Blair, a wise and weathered Storm Weaver, became her mentor. In the quiet corners of their historic Salem home, Maeve unveiled the mysteries of stormcraft. Lorelei eagerly absorbed the ancient knowledge, her bond with her grandmother deepening with every passing storm.",
-        "On the eve of Lorelei's 18th birthday, a tempest of extraordinary proportions engulfed Salem. Lightning painted the sky in hues of blue, revealing the majestic form of the Thunderbird—the mythical guardian tied to the Blair lineage. Lorelei felt a surge of energy as the Thunderbird bestowed its blessing upon her, and going as far to become her familiar, marking her an old-souled Storm Weaver.",
-        "Now, at 28 years old, Lorelei Blair stands as a bridge between the ancient magic of Salem and the rugged allure of Bar Harbor. Her dual heritage weaves a tapestry of storms that tell tales of resilience, growth, and a timeless connection to the elements. In both Salem and Bar Harbor, Lorelei's legacy endures—a Storm Weaver, guardian of tradition, and a wanderer guided by the whispers of the Thunderbird."
+        "On the eve of Lorelei's 18th birthday, a tempest of extraordinary proportions engulfed Salem. Lightning painted the sky in hues of blue, revealing the majestic form of the Thunderbird—the mythical guardian tied to the Blair lineage. Lorelei felt a surge of energy as the Thunderbird bestowed its blessing upon her, marking her as a true Storm Weaver."
       ]
     },
     minnie: {
@@ -56,11 +49,12 @@ function CharacterProfile() {
       },
       playlistUrl: "5F4cW0RU4ACYpzGyEZRhLI",
       recentLetters: [
-        { id: 6, title: "Museum Mysteries", date: "February 12, 1990" },
-        { id: 7, title: "Family Magic", date: "February 8, 1990" },
-        { id: 8, title: "Night Life Tales", date: "February 3, 1990" },
-        { id: 9, title: "Dorothy's Legacy", date: "January 28, 1990" },
-        { id: 10, title: "Chicago Stories", date: "January 23, 1990" },
+        {
+          id: 1,
+          title: "Potions & Prophecies",
+          date: "Spring 1990",
+          preview: "I didn't anticipate the reading I received in Spring, but I should have taken it as a warning."
+        }
       ],
       biography: [
         "Minnie Chaplin, born on November 28th, 1963, in Philadelphia, Pennsylvania, grew up in the vibrant city, surrounded by her rowdy and lively family. Raised by her parents Seth (56 - March 21st, 1936) and Candy (55 - April 20th, 1937) alongside her two brothers, Eric (27 - January 7th, 1963) and Henderson (21 - September 14th, 1968), and half-sister Jackie (29 - December 5th, 1960), Minnie was immersed in a household that served as a vital community center. Her family's value for community deeply influenced her, instilling in her a strong sense of belonging and connection.",
@@ -75,23 +69,17 @@ function CharacterProfile() {
       basics: {
         age: "25",
         home: "Providence, Rhode Island",
-        birthplace: "Inverness, Scotland",
-        birthdate: "January 17th, 1965",
-        favoriteTea: "Chai",
+        birthplace: "Edinburgh, Scotland",
+        birthdate: "October 31st, 1965",
+        favoriteTea: "Scottish Breakfast",
       },
       traits: {
-        virtue: "Courage",
-        vice: "Recklessness",
-        value: "Justice",
+        virtue: "Curiosity",
+        vice: "Perfectionism",
+        value: "Knowledge",
       },
-      playlistUrl: "342SYgrgaBRVBfVtvT4b79",
-      recentLetters: [
-        { id: 11, title: "Highland Mysteries", date: "February 14, 1990" },
-        { id: 12, title: "Providence Tales", date: "February 9, 1990" },
-        { id: 13, title: "Untold Stories", date: "February 4, 1990" },
-        { id: 14, title: "Scottish Whispers", date: "January 29, 1990" },
-        { id: 15, title: "Newsroom Notes", date: "January 24, 1990" },
-      ],
+      playlistUrl: "5HqyPLi4yJ6jrHZBzjIIqY",
+      recentLetters: [],
       biography: [
         "Elspeth Mackintosh was born into a world where the ancient whispers of Scottish lore mingled with the brisk winds that swept across the shores of Loch Ness. She has always been captivated by the tales spun by locals and tourists alike, stories that danced between the realms of history and myth, reality and fantasy.",
         "Growing up on her family's estate near Inverness, Elspeth's days were filled with the sights and sounds of the Highlands, but it was the tales told in her mother's cafe and souvenir shop that truly ignited her imagination. Surrounded by relics of the past and fueled by the fervor of those who passed through, she found herself drawn to the mysteries that lurked beneath the surface of her homeland.",
@@ -117,13 +105,7 @@ function CharacterProfile() {
         value: "Earth",
       },
       playlistUrl: "2vzzLuhhzXXoftCqCIRwjo",
-      recentLetters: [
-        { id: 16, title: "Desert Whispers", date: "February 13, 1990" },
-        { id: 17, title: "Earth's Secrets", date: "February 8, 1990" },
-        { id: 18, title: "Twin Tales", date: "February 3, 1990" },
-        { id: 19, title: "Dust & Discovery", date: "January 28, 1990" },
-        { id: 20, title: "PhD Chronicles", date: "January 23, 1990" },
-      ],
+      recentLetters: [],
       biography: [
         "Eileen was born and raised in Phoenix, Arizona, where she still resides at the age of 28. She has always had a love for all things related to the earth and nature, stemming from her family's long lineage of witches. Eileen is passionate about her studies in geology, and is currently pursuing her PhD. Her goal is to use her knowledge to help protect and preserve the earth. She is also determined to break out of the traditional stereotypes of witches and prove that magic can coexist with science.",
         "Growing up in a family of witches, Eileen was introduced to witchcraft at a young age. However, she never really felt drawn to traditional forms of divination and instead discovered her love for abacomancy. This became her favorite form of divination and she spent countless hours perfecting her skills. Eileen has a deep connection with her twin brother, Eli, who also shares her passion for earth and nature. They often spend hours exploring the desert around their home. He has been her support system throughout her childhood and through perfecting her craft.",
@@ -170,19 +152,22 @@ function CharacterProfile() {
               <h3>Character Playlist</h3>
               <SpotifyPlayer playlistId={character.playlistUrl} />
             </div>
-            <div className="letters-section">
-              <h3>Recent Letters</h3>
-              <div className="letters-list">
-                {character.recentLetters.map(letter => (
-                  <Link to={`/letters/${letter.id}`} key={letter.id} className="letter-link">
-                    <div className="letter-preview">
-                      <h4>{letter.title}</h4>
-                      <span className="letter-date">{letter.date}</span>
-                    </div>
-                  </Link>
-                ))}
+            {character.recentLetters.length > 0 && (
+              <div className="letters-section">
+                <h3>Recent Letters</h3>
+                <div className="letters-list">
+                  {character.recentLetters.map(letter => (
+                    <Link to={`/letters/${letter.id}`} key={letter.id} className="letter-link">
+                      <div className="letter-preview">
+                        <h4>{letter.title}</h4>
+                        <span className="letter-date">{letter.date}</span>
+                        {letter.preview && <p className="preview-text">{letter.preview}</p>}
+                      </div>
+                    </Link>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
           </div>
 
           <div className="biography-section">

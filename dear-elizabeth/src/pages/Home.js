@@ -72,11 +72,10 @@ function Home() {
           <div className="latest-letter">
             <h2>Latest Letter</h2>
             <div className="letter-preview">
-              <span className="letter-date">{latestLetter.date}</span>
-              <h3>{latestLetter.title}</h3>
+              <span className="letter-date">Spring 1990</span>
+              <h3>Potions & Prophecies</h3>
               <p className="preview-text">
-                "My dearest Elizabeth, 
-                The storm that's been brewing these past few days reminds me so much of that night in Salem..."
+                "I didn't anticipate the reading I received in Spring, but I should have taken it as a warning."
               </p>
               <Link to="/letters" className="read-more">Read More Letters →</Link>
             </div>
