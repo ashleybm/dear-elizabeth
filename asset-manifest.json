@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/dear-elizabeth/static/css/main.a45b8929.css",
-    "main.js": "/dear-elizabeth/static/js/main.07b6cd8a.js",
+    "main.js": "/dear-elizabeth/static/js/main.7980a937.js",
     "static/js/453.3b4ec96d.chunk.js": "/dear-elizabeth/static/js/453.3b4ec96d.chunk.js",
     "index.html": "/dear-elizabeth/index.html",
     "main.a45b8929.css.map": "/dear-elizabeth/static/css/main.a45b8929.css.map",
-    "main.07b6cd8a.js.map": "/dear-elizabeth/static/js/main.07b6cd8a.js.map",
+    "main.7980a937.js.map": "/dear-elizabeth/static/js/main.7980a937.js.map",
     "453.3b4ec96d.chunk.js.map": "/dear-elizabeth/static/js/453.3b4ec96d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a45b8929.css",
-    "static/js/main.07b6cd8a.js"
+    "static/js/main.7980a937.js"
   ]
 }
