@@ -1,0 +1,18 @@
+/* 
+TO USE: 
+1. Import: Add this line to your .css file in your profile folder. 
+2. Use by wrapping your text in <md-block></md-block>
+
+verbose instructions on how this works: 
+element selector: https://www.w3schools.com/css/css_selectors.asp
+white-space: https://www.w3schools.com/cssref/pr_text_white-space.php 
+font-family: https://www.w3schools.com/css/css_font.asp
+*/
+
+md-block {
+    background-color: gray;
+    white-space: pre;
+    font-family: monospace;
+    overflow: hidden;
+    white-space:nowrap;
+}
