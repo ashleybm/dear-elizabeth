@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
-import logo from './logo.svg';
 import './App.css';
 
 // Pages
@@ -12,7 +11,7 @@ import CharacterProfile from './pages/CharacterProfile';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/dear-elizabeth">
       <div className="App">
         <nav>
           <NavLink to="/" end>Home</NavLink>

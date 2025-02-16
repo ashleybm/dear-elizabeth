@@ -9,7 +9,7 @@ function CharacterProfile() {
   const characters = {
     lorelei: {
       name: "Lorelei Tempest Blair",
-      image: "/assets/img/LoreleiTempestBlair.png",
+      image: `/assets/img/LoreleiTempestBlair.png`,
       basics: {
         age: "28",
         home: "Bar Harbor, Maine",
@@ -40,7 +40,7 @@ function CharacterProfile() {
     },
     minnie: {
       name: "Minnie Chaplin",
-      image: "/assets/img/MinnieChaplin.png",
+      image: `/assets/img/MinnieChaplin.png`,
       basics: {
         age: "27",
         home: "Suburbs of Chicago, IL",
@@ -71,7 +71,7 @@ function CharacterProfile() {
     },
     elspeth: {
       name: "Elspeth Mackintosh",
-      image: "/assets/img/ElspethMackintosh.jpg",
+      image: `/assets/img/ElspethMackintosh.jpg`,
       basics: {
         age: "25",
         home: "Providence, Rhode Island",
@@ -102,7 +102,7 @@ function CharacterProfile() {
     },
     eileen: {
       name: "Eileen Emberstone",
-      image: "/assets/img/EileenEmberstone.png",
+      image: `/assets/img/EileenEmberstone.png`,
       basics: {
         age: "28",
         home: "Phoenix, AZ",
@@ -145,7 +145,7 @@ function CharacterProfile() {
           <div className="profile-header">
             <h1>{character.name}</h1>
             <div className="profile-image-container">
-              <img src={character.image} alt={character.name} />
+              <img src={`${process.env.PUBLIC_URL}${character.image}`} alt={character.name} />
             </div>
           </div>
 

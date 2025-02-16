@@ -7,25 +7,25 @@ function Characters() {
     {
       id: 'lorelei',
       name: "Lorelei Tempest Blair",
-      image: "/assets/img/LoreleiTempestBlair.png",
+      image: `${process.env.PUBLIC_URL}/assets/img/LoreleiTempestBlair.png`,
       role: "Storm Weaver",
     },
     {
       id: 'minnie',
       name: "Minnie Chaplin",
-      image: "/assets/img/MinnieChaplin.png",
+      image: `${process.env.PUBLIC_URL}/assets/img/MinnieChaplin.png`,
       role: "Vellum Weaver",
     },
     {
       id: 'elspeth',
       name: "Elspeth Mackintosh",
-      image: "/assets/img/ElspethMackintosh.jpg",
+      image: `${process.env.PUBLIC_URL}/assets/img/ElspethMackintosh.jpg`,
       role: "Truth Seeker",
     },
     {
       id: 'eileen',
       name: "Eileen Emberstone",
-      image: "/assets/img/EileenEmberstone.png",
+      image: `${process.env.PUBLIC_URL}/assets/img/EileenEmberstone.png`,
       role: "Opal Whisper",
     }
   ];
@@ -33,7 +33,7 @@ function Characters() {
   const sideCharacters = Array(8).fill(null).map((_, index) => ({
     id: `npc${index + 1}`,
     name: `NPC ${index + 1}`,
-    image: "/assets/img/placeholder.png",
+    image: `${process.env.PUBLIC_URL}/assets/img/placeholder.png`,
   }));
 
   return (
