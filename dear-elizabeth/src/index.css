@@ -1,21 +1,21 @@
 :root {
-  --background: #352208
-  --highlight: #e1bb80
-  --main: #7b6b43
-  --second: #685634
-  --third: 
+  --background: #4A314D;
+  --highlight: #E8DDB5;
+  --main: #3C787E;
+  --second: #A499BE;
+  --accent: #F09D51;
 }
 
 body {
-  background-color: #352208;
-  color: #e1bb80;
+  background-color: var(--background);
+  color: var(--highlight);
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: #685634;
+  background-color: var(--second);
   text-align: center;
   padding: 20px;
 }
@@ -23,6 +23,7 @@ header {
 h1 {
   font-size: 3em;
   margin: 0;
+  color: var(--highlight);
 }
 
 main {
@@ -32,13 +33,14 @@ main {
 .content {
   margin: 30px;
   padding: 30px;
-  border: #e1bb80 solid 2px;
+  border: var(--main) solid 2px;
   border-radius: 30px;
-  background-color: #685634;
+  background-color: var(--second);
 }
 
 h2 {
   font-size: 2em;
+  color: var(--highlight);
 }
 
 ul {
@@ -47,23 +49,24 @@ ul {
 }
 
 footer {
-  background-color: #685634;
+  background-color: var(--second);
   text-align: center;
   padding: 10px 0;
   position: fixed;
   width: 100%;
   bottom: 0;
+  color: var(--highlight);
 }
 
 .topnav {
-  background-color: #806443;
+  background-color: var(--main);
   overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: #e1bb80;
+  color: var(--highlight);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -72,14 +75,14 @@ footer {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #685634;
-  color: #e1bb80;
+  background-color: var(--second);
+  color: var(--accent);
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #e1bb80;
-  color: #685634;
+  background-color: var(--highlight);
+  color: var(--second);
 }
 
 .sepia {

@@ -1,0 +1,103 @@
+.letter-page {
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: var(--background);
+}
+
+.letter-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--second);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.letter-navigation {
+  margin-bottom: 2rem;
+}
+
+.back-link {
+  color: var(--highlight);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: var(--main);
+}
+
+.letter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.letter-number {
+  color: var(--highlight);
+  font-weight: bold;
+}
+
+.letter-prompt {
+  background-color: var(--main);
+  color: var(--background);
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+}
+
+.letter-date {
+  color: var(--highlight);
+  font-style: italic;
+}
+
+.letter-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: var(--background);
+}
+
+.letter-meta {
+  margin: 1rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--highlight);
+}
+
+.letter-author, .letter-recipients {
+  margin: 0.25rem 0;
+  color: var(--highlight);
+  font-size: 0.9rem;
+}
+
+.letter-body {
+  color: var(--background);
+  line-height: 1.8;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
+
+.letter-body p {
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .letter-page {
+    padding: 1rem;
+  }
+
+  .letter-content {
+    padding: 1.5rem;
+  }
+
+  .letter-title {
+    font-size: 1.5rem;
+  }
+
+  .letter-body {
+    font-size: 1rem;
+  }
+}

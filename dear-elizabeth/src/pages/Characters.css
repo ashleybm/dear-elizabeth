@@ -1,0 +1,160 @@
+.characters-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--background);
+}
+
+.characters-page h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--highlight);
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+}
+
+.characters-page h2 {
+  color: var(--highlight);
+  margin-bottom: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+}
+
+/* Main Characters Section */
+.main-characters {
+  margin-bottom: 4rem;
+}
+
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.character-preview {
+  text-decoration: none;
+  color: inherit;
+}
+
+.character-image-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%; /* 4:3 aspect ratio */
+  border-radius: 12px;
+  overflow: hidden;
+  border: 3px solid var(--main);
+}
+
+.character-image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.character-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  background: linear-gradient(transparent, var(--background));
+  color: var(--highlight);
+  text-align: center;
+}
+
+.character-overlay h3 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.character-overlay p {
+  margin: 0.5rem 0 0;
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+/* Side Characters Section */
+.side-characters {
+  margin-top: 4rem;
+}
+
+.side-character-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.side-character-preview {
+  text-decoration: none;
+  color: inherit;
+}
+
+.side-character-image {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; /* 1:1 aspect ratio */
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid var(--main);
+}
+
+.side-character-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.side-character-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: linear-gradient(transparent, var(--background));
+  color: var(--highlight);
+  text-align: center;
+}
+
+.side-character-overlay h4 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Hover Effects */
+.character-image-container:hover img,
+.side-character-image:hover img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+  .side-character-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .character-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .side-character-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .side-character-grid {
+    grid-template-columns: 1fr;
+  }
+}
