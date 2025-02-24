@@ -13,8 +13,16 @@
   color: var(--main);
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   text-align: center;
+}
+
+.tagline {
+  text-align: center;
+  color: var(--main);
+  font-style: italic;
+  margin-bottom: 2rem;
+  opacity: 0.8;
 }
 
 .letters-grid {
@@ -34,6 +42,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  position: relative;
 }
 
 .letter-card:hover {
@@ -44,27 +53,36 @@
 .letter-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 1rem;
   font-size: 0.9rem;
+  color: var(--background);
+  opacity: 0.8;
+  position: relative;
+  min-height: 28px;
+}
+
+.letter-header-left {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .letter-number {
-  color: var(--highlight);
+  background-color: var(--main);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
   font-weight: bold;
 }
 
 .letter-prompt {
-  background-color: var(--main);
-  color: var(--background);
-  padding: 0.25rem 0.75rem;
-  border-radius: 15px;
-  font-size: 0.8rem;
-}
-
-.letter-date {
-  color: var(--highlight);
-  font-style: italic;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--accent);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  white-space: nowrap;
 }
 
 .letter-title {
@@ -74,50 +92,55 @@
   color: var(--background);
 }
 
+.letter-date {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-style: italic;
+}
+
 .letter-meta {
   margin: 0.5rem 0;
   font-size: 0.9rem;
+  color: var(--background);
+  opacity: 0.9;
 }
 
-.letter-author, .letter-recipients {
-  margin: 0.25rem 0;
-  color: var(--highlight);
+.letter-author,
+.letter-recipients {
+  margin: 0.2rem 0;
 }
 
 .letter-preview {
-  color: var(--highlight);
-  margin: 1rem 0;
-  line-height: 1.6;
   flex-grow: 1;
-  font-style: italic;
-  font-size: 1.1rem;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--second);
+  opacity: 0.8;
+  font-style: normal;
 }
 
 .read-more {
-  color: var(--highlight);
-  font-weight: bold;
-  margin-top: 1rem;
+  margin-top: auto;
   text-align: right;
+  font-style: italic;
+  color: var(--background);
+  opacity: 0.7;
+  font-size: 0.9rem;
+  transition: opacity 0.3s ease;
+}
+
+.letter-card:hover .read-more {
+  opacity: 1;
 }
 
 @media (max-width: 768px) {
-  .letters-page {
-    padding: 1rem;
-  }
-
   .letters-grid {
     grid-template-columns: 1fr;
   }
-
-  .letter-card {
-    padding: 1rem;
-  }
-
-  .letter-title {
-    font-size: 1.25rem;
+  
+  .letters-container h1 {
+    font-size: 2rem;
   }
 }

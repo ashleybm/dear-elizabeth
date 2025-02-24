@@ -11,93 +11,126 @@
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: var(--background);
 }
 
 .letter-navigation {
-  margin-bottom: 2rem;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
 }
 
 .back-link {
-  color: var(--highlight);
+  color: var(--main);
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .back-link:hover {
-  color: var(--main);
+  opacity: 0.8;
 }
 
 .letter-header {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.letter-top-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
-  font-size: 0.9rem;
+  width: 100%;
 }
 
 .letter-number {
-  color: var(--highlight);
+  background-color: var(--main);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
   font-weight: bold;
+  color: var(--background);
 }
 
 .letter-prompt {
-  background-color: var(--main);
+  background-color: var(--accent);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
   color: var(--background);
-  padding: 0.25rem 0.75rem;
-  border-radius: 15px;
-  font-size: 0.8rem;
 }
 
 .letter-date {
-  color: var(--highlight);
   font-style: italic;
+  opacity: 0.9;
 }
 
-.letter-title {
+.letter-title-row {
+  text-align: center;
+  width: 100%;
+}
+
+.letter-title-row h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  margin: 1rem 0;
+  font-size: 2.5rem;
+  margin: 0;
   color: var(--background);
 }
 
-.letter-meta {
-  margin: 1rem 0;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--highlight);
+.letter-recipients-row {
+  text-align: left;
+  font-size: 1.1rem;
+  color: var(--background);
+  opacity: 0.9;
+  width: 100%;
 }
 
-.letter-author, .letter-recipients {
-  margin: 0.25rem 0;
-  color: var(--highlight);
-  font-size: 0.9rem;
+.letter-recipients-row a,
+.letter-author a {
+  color: var(--background);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.letter-recipients-row a:hover,
+.letter-author a:hover {
+  border-color: var(--background);
 }
 
 .letter-body {
-  color: var(--background);
-  line-height: 1.8;
   font-size: 1.1rem;
-  margin-top: 2rem;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  color: var(--background);
+  opacity: 0.85;
+  margin-bottom: 2rem;
+  text-align: left;
 }
 
 .letter-body p {
   margin-bottom: 1.5rem;
 }
 
-@media (max-width: 768px) {
-  .letter-page {
-    padding: 1rem;
-  }
+.letter-footer {
+  text-align: right;
+  font-size: 1.1rem;
+  color: var(--background);
+  opacity: 0.9;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.5rem;
+}
 
+@media (max-width: 768px) {
   .letter-content {
     padding: 1.5rem;
   }
 
-  .letter-title {
-    font-size: 1.5rem;
+  .letter-title-row h1 {
+    font-size: 2rem;
   }
 
   .letter-body {
     font-size: 1rem;
+    line-height: 1.6;
   }
 }

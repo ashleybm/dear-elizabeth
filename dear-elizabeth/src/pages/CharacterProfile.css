@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   background-color: var(--background);
+  min-height: 100vh;
 }
 
 .profile-container {
@@ -10,24 +11,28 @@
   margin: 0 auto;
 }
 
-.profile-card {
-  background: var(--second);
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(60, 120, 126, 0.3);
+.back-link {
+  display: inline-block;
+  color: var(--main);
+  text-decoration: none;
   margin-bottom: 2rem;
-  color: var(--background);
+  font-style: italic;
+  transition: opacity 0.2s ease;
+}
+
+.back-link:hover {
+  opacity: 0.8;
 }
 
 .profile-header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .profile-header h1 {
   font-size: 3rem;
-  margin-bottom: 1.5rem;
-  color: var(--highlight);
+  margin: 1.5rem 0;
+  color: var(--main);
   font-family: 'Playfair Display', serif;
 }
 
@@ -39,6 +44,7 @@
   border-radius: 12px;
   overflow: hidden;
   border: 3px solid var(--main);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .profile-image-container img {
@@ -47,117 +53,163 @@
   display: block;
 }
 
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .info-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+  gap: 2rem;
 }
 
 .info-group {
   background: var(--second);
   padding: 1.5rem;
-  border-radius: 6px;
-  border: 1px solid var(--main);
+  border-radius: 8px;
+  color: var(--background);
 }
 
 .info-group h3 {
   color: var(--background);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-family: 'Playfair Display', serif;
   font-size: 1.8rem;
 }
 
 .info-group p {
-  margin: 0.5rem 0;
-  color: var(--background);
-  font-size: 1.2rem;
+  margin: 0.8rem 0;
+  font-size: 1.1rem;
+  line-height: 1.4;
 }
 
 .info-group strong {
-  color: var(--main);
-  font-size: 1.2rem;
+  color: var(--accent);
+  margin-right: 0.5rem;
 }
 
-/* Media Section (Music and Letters) */
-.media-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.music-section, .letters-section {
-  background: var(--second);
-  padding: 1.5rem;
-  border-radius: 6px;
-  border: 1px solid var(--main);
-}
-
-.music-section h3, .letters-section h3 {
-  color: var(--background);
-  margin-bottom: 1rem;
-  font-family: 'Playfair Display', serif;
-  font-size: 1.8rem;
-}
-
-/* Letters List Styling */
-.letters-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.letter-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.letter-preview {
-  padding: 1rem;
-  border-radius: 4px;
-  background: var(--background);
-  transition: transform 0.2s ease;
-}
-
-.letter-preview:hover {
-  transform: translateX(5px);
-}
-
-.letter-preview h4 {
-  color: var(--highlight);
-  margin: 0;
-  font-size: 1.2rem;
-  font-family: 'Playfair Display', serif;
-}
-
-.letter-date {
-  display: block;
-  color: var(--main);
-  font-size: 0.9rem;
-  margin-top: 0.3rem;
-}
-
-/* Biography Section */
 .biography-section {
   background: var(--second);
-  padding: 1.5rem;
-  border-radius: 6px;
-  border: 1px solid var(--main);
+  padding: 2rem;
+  border-radius: 8px;
+  color: var(--background);
 }
 
 .biography-section h3 {
   color: var(--background);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-family: 'Playfair Display', serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
-.bio-content p {
-  margin-bottom: 1rem;
-  line-height: 1.8;
+.biography-section p {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.media-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.music-section,
+.letters-section {
+  background: var(--second);
+  padding: 1.5rem;
+  border-radius: 8px;
   color: var(--background);
+}
+
+.music-section h3,
+.letters-section h3 {
+  color: var(--background);
+  margin-bottom: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+}
+
+.letters-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.character-profile .letter-link {
+  background-color: var(--background);
+  border-radius: 8px;
+  padding: 0.8rem;
+  text-decoration: none;
+  color: var(--second);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 0.5rem;
+  height: auto;
+}
+
+.character-profile .letter-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.character-profile .letter-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 0.3rem;
+  font-size: 0.85rem;
+  color: var(--second);
+  opacity: 0.8;
+  position: relative;
+  min-height: 18px;
+}
+
+.character-profile .letter-number {
+  background-color: var(--accent);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  color: var(--background);
+}
+
+.character-profile .letter-prompt {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--second);
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  color: var(--background);
+  font-size: 0.85rem;
+  min-width: 60px;
+  text-align: center;
+  overflow: visible;
+  z-index: 1;
+  line-height: 1.4;
+}
+
+.character-profile .letter-date {
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+  font-style: italic;
+  opacity: 0.9;
+  font-size: 0.8rem;
+  color: var(--second);
+}
+
+.character-profile .letter-title {
+  font-family: 'Playfair Display', serif;
   font-size: 1.2rem;
+  color: var(--main);
+  margin: 1rem 0 0.5rem;
 }
 
 @media (max-width: 768px) {
@@ -165,17 +217,15 @@
   .media-section {
     grid-template-columns: 1fr;
   }
-  
-  .bio-content p {
-    font-size: 1.1rem;
+
+  .profile-header h1 {
+    font-size: 2.5rem;
   }
-  
-  .info-group p,
-  .info-group strong {
-    font-size: 1.1rem;
-  }
-  
-  .letter-preview h4 {
-    font-size: 1.1rem;
+
+  .info-group h3,
+  .biography-section h3,
+  .music-section h3,
+  .letters-section h3 {
+    font-size: 1.5rem;
   }
 }
