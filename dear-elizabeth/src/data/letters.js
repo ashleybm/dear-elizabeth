@@ -17,6 +17,20 @@ They had always hated each other in college. Especially after Steph hit Rebecca'
 
 Steph had been at the bar the night prior with her boyfriend Matthew, and so of course I kept my mouth shut. But I didn't hear from either of them for almost a week, until Rebecca dropped by with a loaf of bread, and asked for a cure for heartbreak. This was where I needed the warning- because it turned out that Matthew showed at the bar looking for Rebecca not more than two weeks later. He came in with a metal bat, wet curls hairsprayed so hard that a match would have had him bald in an instant.
 
-When he opened his mouth? I was tempted.`
+When he opened his mouth? I was tempted. 
+
+'Fuck off Minnie, tell me where Rebecca's staying these days, and I'll leave your parents shop alone.' Girls- when I tell you this man nearly died- I mean it.
+
+I told him to sit and I'd make a drink while I called Rebecca down from up the street. 'I don't want your liquor, you'll curse me or something.' Hissing like the snake he is of course. But when he saw the Sazerac with a full mango slice on the top, he slid it closer to him if only to get on the fruit atop the drink. (Wormwood- inhibit violent acts, anger reduction)
+
+I went to the phone, and called three people. First, for me, my brother Eric to the bar. Ant- to check on Steph. Finally Rebecca, I told her he was waiting, and she told me she was going to show up with her father. This is how I knew I should have taken this as a warning. The coin- is a symbol of two things here. One, location, two, Matthew let it slip that he was entitled to Steph's paycheck on account of being her boyfriend, thinking I would agree. 
+
+He had also stitched a Bully Boys patch onto his jacket, and I don't allow that shit in my bar. So I grabbed the top and ripped it off. He sprung back from the bar and raised his bat. Eric handled it after that, he walked in and socked him between the eyes. 
+
+He didn't dare say anything after Eric beat him to a pulp. Turns out.. he'd been stealing her cash, trapping her in the house, and when he saw Rebecca hug Steph good bye he'd gotten suspicious. Eric told him to get out of town for the week or he'd make sure he spent it in the hospital.
+
+Steph moved out- and is living in my guest room for a bit. She doesn't handle the foot traffic well tho, and I'd anticipate as soon as her and Rebecca smooth it over they'll be living together. I think the wrapper means loss, it's empty, but I also think it contextualizes the who.
+
+With such an eventful Spring, I'm hoping for a warm Summer breeze for all of us.`
   }
 ];

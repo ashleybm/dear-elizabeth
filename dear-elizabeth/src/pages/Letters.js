@@ -15,9 +15,13 @@ function Letters() {
           {letters.map(letter => (
             <Link to={`/letters/${letter.id}`} key={letter.id} className="letter-card">
               <div className="letter-header">
-                <span className="letter-number">#{letter.id}</span>
-                <span className="letter-date">{letter.date}</span>
+                <div className="letter-header-left">
+                  <span className="letter-number">#{letter.id}</span>
+                </div>
                 <span className="letter-prompt">{letter.prompt}</span>
+                <div className="letter-header-right">
+                  <span className="letter-date">{letter.date}</span>
+                </div>
               </div>
               <h2 className="letter-title">{letter.title}</h2>
               <div className="letter-meta">

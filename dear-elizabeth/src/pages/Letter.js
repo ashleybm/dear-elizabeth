@@ -25,9 +25,13 @@ function Letter() {
       <div className="letter-content">
         <div className="letter-header">
           <div className="letter-top-row">
-            <span className="letter-number">#{letter.id}</span>
-            {letter.prompt && <span className="letter-prompt">{letter.prompt}</span>}
-            <span className="letter-date">{letter.date}</span>
+            <div className="letter-left">
+              <span className="letter-number">#{letter.id}</span>
+              {letter.prompt && <span className="letter-prompt">{letter.prompt}</span>}
+            </div>
+            <div className="letter-right">
+              <span className="letter-date">{letter.date}</span>
+            </div>
           </div>
           
           <div className="letter-title-row">
@@ -37,9 +41,9 @@ function Letter() {
           <div className="letter-recipients-row">
             To: {recipients.map((recipient, index) => (
               <React.Fragment key={letter.recipients[index]}>
-                {index > 0}
+                {index > 0 && ' '}
                 <Link to={`/characters/${letter.recipients[index]}`}>
-                  {recipient?.name}
+                  {recipient?.name.split(' ')[0]}
                 </Link>
               </React.Fragment>
             ))}

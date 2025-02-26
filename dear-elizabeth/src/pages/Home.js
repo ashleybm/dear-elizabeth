@@ -41,7 +41,7 @@ function Home() {
                   <span className="letter-prompt">{latestLetter.prompt}</span>
                 </div>
                 <span className="letter-date">{latestLetter.date}</span>
-                <h2 className="letter-title">{latestLetter.title}</h2>
+                <h2 className="letter-title-home">{latestLetter.title}</h2>
                 <div className="letter-meta">
                   <p className="letter-author">From: {characters[latestLetter.author]?.name}</p>
                   <p className="letter-recipients">

@@ -4,7 +4,7 @@
   background-color: var(--background);
 }
 
-.letter-content {
+.letter-page .letter-content {
   max-width: 800px;
   margin: 0 auto;
   background-color: var(--second);
@@ -14,37 +14,62 @@
   color: var(--background);
 }
 
-.letter-navigation {
+.letter-page .letter-navigation {
   max-width: 800px;
   margin: 0 auto 2rem auto;
 }
 
-.back-link {
+.letter-page .back-link {
   color: var(--main);
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
-.back-link:hover {
+.letter-page .back-link:hover {
   opacity: 0.8;
 }
 
-.letter-header {
+.letter-page .letter-header {
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.letter-top-row {
+.letter-page .letter-top-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  flex-wrap: nowrap;
+  position: relative;
 }
 
-.letter-number {
+.letter-page .letter-left, 
+.letter-page .letter-right {
+  display: flex;
+  align-items: flex-start;
+}
+
+.letter-page .letter-left {
+  gap: 0.5rem;
+}
+
+.letter-page .letter-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.letter-page .letter-number, 
+.letter-page .letter-prompt, 
+.letter-page .letter-date {
+  display: inline-block;
+  margin-top: 0;
+}
+
+.letter-page .letter-number {
   background-color: var(--main);
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
@@ -52,31 +77,31 @@
   color: var(--background);
 }
 
-.letter-prompt {
+.letter-page .letter-prompt {
   background-color: var(--accent);
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
   color: var(--background);
 }
 
-.letter-date {
+.letter-page .letter-date {
   font-style: italic;
   opacity: 0.9;
 }
 
-.letter-title-row {
+.letter-page .letter-title-row {
   text-align: center;
   width: 100%;
 }
 
-.letter-title-row h1 {
+.letter-page .letter-title-row h1 {
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   margin: 0;
   color: var(--background);
 }
 
-.letter-recipients-row {
+.letter-page .letter-recipients-row {
   text-align: left;
   font-size: 1.1rem;
   color: var(--background);
@@ -84,20 +109,20 @@
   width: 100%;
 }
 
-.letter-recipients-row a,
-.letter-author a {
+.letter-page .letter-recipients-row a,
+.letter-page .letter-author a {
   color: var(--background);
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s ease;
 }
 
-.letter-recipients-row a:hover,
-.letter-author a:hover {
+.letter-page .letter-recipients-row a:hover,
+.letter-page .letter-author a:hover {
   border-color: var(--background);
 }
 
-.letter-body {
+.letter-page .letter-body {
   font-size: 1.1rem;
   line-height: 1.8;
   white-space: pre-wrap;
@@ -107,11 +132,11 @@
   text-align: left;
 }
 
-.letter-body p {
+.letter-page .letter-body p {
   margin-bottom: 1.5rem;
 }
 
-.letter-footer {
+.letter-page .letter-footer {
   text-align: right;
   font-size: 1.1rem;
   color: var(--background);
@@ -121,15 +146,15 @@
 }
 
 @media (max-width: 768px) {
-  .letter-content {
+  .letter-page .letter-content {
     padding: 1.5rem;
   }
 
-  .letter-title-row h1 {
+  .letter-page .letter-title-row h1 {
     font-size: 2rem;
   }
 
-  .letter-body {
+  .letter-page .letter-body {
     font-size: 1rem;
     line-height: 1.6;
   }

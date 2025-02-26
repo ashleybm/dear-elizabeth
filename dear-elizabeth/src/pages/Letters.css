@@ -50,7 +50,7 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.letter-header {
+.letter-card .letter-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -60,58 +60,64 @@
   opacity: 0.8;
   position: relative;
   min-height: 28px;
+  padding-top: 0.5rem;
 }
 
-.letter-header-left {
-  position: absolute;
-  left: 0;
-  top: 0;
+.letter-card .letter-header-left {
+  display: flex;
+  align-items: center;
+  z-index: 1;
 }
 
-.letter-number {
+.letter-card .letter-header-right {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.letter-card .letter-number {
   background-color: var(--main);
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
   font-weight: bold;
 }
 
-.letter-prompt {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+.letter-card .letter-prompt {
   background-color: var(--accent);
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
   white-space: nowrap;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  z-index: 0;
 }
 
-.letter-title {
+.letter-card .letter-title {
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
-  margin: 0.5rem 0;
+  margin: 1.5rem 0 0.5rem 0;
   color: var(--background);
 }
 
-.letter-date {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
+.letter-card .letter-date {
   font-style: italic;
 }
 
-.letter-meta {
+.letter-card .letter-meta {
   margin: 0.5rem 0;
   font-size: 0.9rem;
   color: var(--background);
   opacity: 0.9;
 }
 
-.letter-author,
-.letter-recipients {
+.letter-card .letter-author,
+.letter-card .letter-recipients {
   margin: 0.2rem 0;
 }
 
-.letter-preview {
+.letter-card .letter-preview {
   flex-grow: 1;
   margin: 1rem 0;
   font-size: 0.95rem;
@@ -121,7 +127,7 @@
   font-style: normal;
 }
 
-.read-more {
+.letter-card .read-more {
   margin-top: auto;
   text-align: right;
   font-style: italic;
